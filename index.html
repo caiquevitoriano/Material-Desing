@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=divece-width, initial-scale=1">
     <title> Material Dising Lite Google</title>
-    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-red.min.css" />
     <script src="js/material.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
     
 <style>
     .mdl-cell{
-        background-color: #bbb;
-        height: 800px;
+        background-color: gainsboro;
+        height: 40%;
     }
     .transp {
         background: rgba(0,0,0,0)
@@ -20,6 +20,28 @@
     
     .md-40{
         font-size: 60px;
+    }
+    .mdl-card {
+        width: 30%;
+        display: inline-block;
+        margin-left: 2%;
+        
+    }
+    
+    .demonstracao-card{
+        min-width: 30%!important;
+        margin-bottom: 1%;
+        
+    }
+    
+    .demonstracao-card > .mdl-card__title{
+        color: white;
+        height: 300px;
+        
+    }
+    
+    .demonstracao-card > .mdl-card__menu{
+        color: white;
     }
 </style>
     
@@ -51,8 +73,263 @@
             <main>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone transp"></div>
-                    <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">8 (tablet 6)</div>               
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">
+                      
+                        <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input"  type="text" id="user" pattern="[A-Z,a-z,0-9]*">
+                            <label class="mdl-textfield__label" for="user"> Usuário</label>
+                            <span class="mdl-textfield__error">Sem espaços</span>
+                        </div>
+                        <br/>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input"  type="password" id="user" pattern="^.{6,18}$">
+                            <label class="mdl-textfield__label" for="user"> Senha </label>
+                            <span class="mdl-textfield__error">Sem espaços, entre 6 e 18 caracteres</span>
+                        </div>
+                       
+
+                        
+                        
+                        <!-- <button class="mdl-button mdl-js-button mld-button--primary"> button </button>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> button </button>
+                        <button class="mdl-button mdl-js-button" disabled> button </button>
+                        <br/> <br/>
+                        <button class="mdl-button mdl-js-button mld-button--primary mdl-button--raised"> button </button>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--raised"> button </button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised" disabled> button </button>
+                        <br/> <br/>
+                        <button class="mdl-button mdl-js-button mld-button--primary mdl-button--fab"> <i class="material-icons">add</i></button>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--fab"> <i class="material-icons">add</i></button>
+                        <button class="mdl-button mdl-js-button mdl-button--fab" disabled> <i class="material-icons">add</i></button> -->
+                    </div>               
                     <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--hide-phone transp"></div>
+                    
+                    <div class="mdl-cell mdl-cell--12-col" style="margin: auto !important">
+                        <h3> cards</h3>
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card1.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Lorde </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Ella Marija Lani Yelich-O'Connor, mais conhecida pelo nome artístico Lorde, é uma cantora e compositora neozelandesa. Foi eleita a jovem mais influente do mundo pela...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                            
+                            
+                        </div> 
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card2.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> The Weeknd </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Abel Makkonen Tesfaye (Toronto, 16 de fevereiro de 1990),[1] mais conhecido por seu nome artístico The Weeknd[2], é um cantor e produtor musical canadense de R&B e ROCK...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div>   
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card3.png) center / cover">
+                                <h2 class="mdl-card__title-text"> Sia </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Sia Kate Isobelle Furler (Adelaide, 18 de dezembro de 1975), mais conhecida somente como Sia, é uma cantora, produtora musical, compositora e diretora de videoclipes australiana...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div> 
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card4.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Arcade Fire </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Arcade Fire é uma banda de indie rock da cidade de Montreal, Quebec, no Canadá. Fundada em 2003 pelo casal Win Butler e Régine, a banda é conhecida por suas apresentações ao vivo...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                            
+                            
+                        </div> 
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card5.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> The xx </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                The xx é uma banda Indie britânica do sudoeste de Londres, Inglaterra. Os vocalistas Romy Anna Madley Croft e Oliver David Sim se conheceram aos 3 anos de idade...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div>   
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card6.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Gorillaz </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Gorillaz é uma banda virtual de trip rock criada no ano de 1998 pelo líder de Blur, Damon Albarn e por Jamie Hewlett, co-criador da história em quadrinhos Tank Girl. A banda é...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div> 
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card7.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Johnny Hooker </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                John Vicente Donovan, mais conhecido como Johnny Hooker, é um cantor, compositor, ator e roteirista brasileiro. Foi vencedor do...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                            
+                            
+                        </div> 
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card8.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Tiê </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Tiê Gasparinetti Biral é uma cantora e compositora brasileira contratada da gravadora Warner Music Brasil...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div>   
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card9.png) center / cover">
+                                <h2 class="mdl-card__title-text"> Silva </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Lúcio Silva de Souza, mais conhecido pelo nome artístico SILVA, é um cantor, compositor, produtor musical e músico multi-instrumentista brasileiro...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div> 
+                       
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card10.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Selvagens à Procura de Lei </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Selvagens à Procura de Lei é uma banda brasileira de rock formada em 2009 na cidade de Fortaleza, Ceará. Seus fãs também são conhecidos...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i> 
+                                </button>
+                            </div>
+                            
+                            
+                        </div> 
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card11.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Vespas Mandarinas </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Vespas Mandarinas é um duo de pop rock, formado na cidade de São Paulo, no ano de 2009 e composto por Thadeu Meneghini e Chuck Hipolitho...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div>   
+                        
+                        <div class="mdl-card mdl-shadow--4dp demonstracao-card">
+                            <div class="mdl-card__title" style="background: url(img/card12.jpg) center / cover">
+                                <h2 class="mdl-card__title-text"> Supercombo </h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Supercombo é uma banda brasileira de rock alternativo criada em 2007, na cidade de Vitória. Entre várias formações e ideias existentes...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border"> 
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"> Mais... </button>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> 
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>                          
+                            
+                        </div> 
+                        
+                        
+                    
+                    </div>
                 </div>
             </main>
             
